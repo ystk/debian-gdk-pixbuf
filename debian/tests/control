@@ -1,0 +1,2 @@
+Tests: build
+Depends: libgdk-pixbuf2.0-dev, build-essential, pkg-config

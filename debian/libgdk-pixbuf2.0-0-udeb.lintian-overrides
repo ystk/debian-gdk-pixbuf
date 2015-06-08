@@ -1,0 +1,3 @@
+# Ship a minimal MIME database in the udeb, since the loaders mechanism isn’t
+# sufficient to get proper PNG support
+libgdk-pixbuf2.0-0-udeb udeb: package-contains-mime-cache-file usr/share/mime/mime.cache
