@@ -1,3 +1,9 @@
+gdk-pixbuf (2.31.1-2+deb8u2) jessie-security; urgency=medium
+
+  * CVE-2015-4491
+
+ -- Moritz Muehlenhoff <jmm@debian.org>  Tue, 18 Aug 2015 12:08:47 +0000
+
 gdk-pixbuf (2.31.1-2) unstable; urgency=medium
 
   * debian/rules: Fix the permissions of "loaders.cache" file in the udeb to
