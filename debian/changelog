@@ -1,3 +1,14 @@
+gdk-pixbuf (2.31.1-2+deb8u3) jessie-security; urgency=high
+
+  * Non-maintainer upload by the Security Team.
+  * Add patches to fix CVE-2015-7673.
+    CVE-2015-7673: Heap overflow and DoS vulnerability when scaling a TGA
+    file.
+  * Add patch to fix CVE-2015-7674.
+    CVE-2015-7674: Heap overflow when scaling a GIF file.
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 24 Oct 2015 16:43:46 +0200
+
 gdk-pixbuf (2.31.1-2+deb8u2) jessie-security; urgency=medium
 
   * CVE-2015-4491

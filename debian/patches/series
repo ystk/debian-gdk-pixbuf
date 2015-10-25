@@ -1,1 +1,5 @@
 CVE-2015-4491.patch
+CVE-2015-7673/0001-pixops-Fail-make_weights-functions-on-OOM.patch
+CVE-2015-7673/0002-tga-Wrap-TGAColormap-struct-in-its-own-API.patch
+CVE-2015-7673/0003-io-tga-Colormaps-are-always-present-so-always-parse-.patch
+CVE-2015-7674/0001-pixops-Don-t-overflow-variables-when-shifting-them.patch
