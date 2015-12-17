@@ -1,3 +1,12 @@
+gdk-pixbuf (2.31.1-2+deb8u4) jessie-security; urgency=high
+
+  * Non-maintainer upload by the Security Team.
+  * Add additional patch for CVE-2015-4491.
+    The n_x variable could be made large enough to overflow, which was
+    missed in the initial commit upstream.
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 15 Dec 2015 19:47:31 +0100
+
 gdk-pixbuf (2.31.1-2+deb8u3) jessie-security; urgency=high
 
   * Non-maintainer upload by the Security Team.
