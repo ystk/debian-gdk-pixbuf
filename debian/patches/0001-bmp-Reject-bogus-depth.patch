@@ -1,0 +1,37 @@
+From ca74893a8e06e99b4adc682ee1550bfd020687c7 Mon Sep 17 00:00:00 2001
+From: Matthias Clasen <mclasen@redhat.com>
+Date: Sat, 5 Dec 2015 15:49:32 -0500
+Subject: [PATCH] bmp: Reject bogus depth
+
+Erroring out early if we find a bogus image depth is
+the right thing to do, and avoids possible memory
+overruns later on.
+
+https://bugzilla.gnome.org/show_bug.cgi?id=747605
+---
+ gdk-pixbuf/io-bmp.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+diff --git a/gdk-pixbuf/io-bmp.c b/gdk-pixbuf/io-bmp.c
+index 1f197e8..5c30bfb 100644
+--- a/gdk-pixbuf/io-bmp.c
++++ b/gdk-pixbuf/io-bmp.c
+@@ -318,6 +318,15 @@ static gboolean DecodeHeader(unsigned char *BFH, unsigned char *BIH,
+ 		return FALSE;
+ 	}
+ 
++        if (State->Header.depth > 32)
++          {
++		g_set_error_literal (error,
++                                     GDK_PIXBUF_ERROR,
++                                     GDK_PIXBUF_ERROR_CORRUPT_IMAGE,
++                                     _("BMP image has unsupported depth"));
++		State->read_state = READ_STATE_ERROR;
++          }
++
+ 	if (State->Header.size == 12)
+ 		clrUsed = 1 << State->Header.depth;
+ 	else
+-- 
+2.1.4
+

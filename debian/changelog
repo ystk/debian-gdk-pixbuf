@@ -1,3 +1,14 @@
+gdk-pixbuf (2.31.1-2+deb8u5) jessie-security; urgency=high
+
+  * Non-maintainer upload by the Security Team.
+  * CVE-2015-8875: Integer overflows in various pixops functions
+  * CVE-2015-7552: Heap-based buffer overflow in the gdk_pixbuf_flip function
+  * ico: Protect against overflow
+  * bmp: Reject bogus depth
+  * bmp: Reject impossible palette size
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 29 May 2016 15:19:54 +0200
+
 gdk-pixbuf (2.31.1-2+deb8u4) jessie-security; urgency=high
 
   * Non-maintainer upload by the Security Team.

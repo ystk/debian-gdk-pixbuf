@@ -4,3 +4,8 @@ CVE-2015-7673/0001-pixops-Fail-make_weights-functions-on-OOM.patch
 CVE-2015-7673/0002-tga-Wrap-TGAColormap-struct-in-its-own-API.patch
 CVE-2015-7673/0003-io-tga-Colormaps-are-always-present-so-always-parse-.patch
 CVE-2015-7674/0001-pixops-Don-t-overflow-variables-when-shifting-them.patch
+CVE-2015-8875/0001-pixops-use-gint64-in-more-places-to-avoid-overflow-w.patch
+CVE-2015-7552/0001-Avoid-integer-overflow-in-gdk_pixbuf_rotate_simple.patch
+0001-ico-Protect-against-overflow.patch
+0001-bmp-Reject-bogus-depth.patch
+0001-bmp-Reject-impossible-palette-size.patch
