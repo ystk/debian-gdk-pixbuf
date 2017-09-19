@@ -1,3 +1,9 @@
+gdk-pixbuf (2.31.1-2+deb8u6) jessie-security; urgency=medium
+
+  * CVE-2017-2862 (Closes: #874552)
+
+ -- Moritz Muehlenhoff <jmm@hullmann>  Fri, 15 Sep 2017 18:57:50 +0200
+
 gdk-pixbuf (2.31.1-2+deb8u5) jessie-security; urgency=high
 
   * Non-maintainer upload by the Security Team.

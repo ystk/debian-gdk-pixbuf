@@ -9,3 +9,4 @@ CVE-2015-7552/0001-Avoid-integer-overflow-in-gdk_pixbuf_rotate_simple.patch
 0001-ico-Protect-against-overflow.patch
 0001-bmp-Reject-bogus-depth.patch
 0001-bmp-Reject-impossible-palette-size.patch
+CVE-2017-2862.patch
