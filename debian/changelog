@@ -1,3 +1,9 @@
+gdk-pixbuf (2.31.1-2+deb8u7) jessie-security; urgency=medium
+
+  * CVE-2017-1000422
+
+ -- Moritz Muehlenhoff <jmm@debian.org>  Sat, 13 Jan 2018 13:25:29 +0100
+
 gdk-pixbuf (2.31.1-2+deb8u6) jessie-security; urgency=medium
 
   * CVE-2017-2862 (Closes: #874552)
