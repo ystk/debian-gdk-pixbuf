@@ -1,3 +1,31 @@
+gdk-pixbuf (2.31.1-2+deb8u8) jessie-security; urgency=medium
+
+  * Non-maintainer upload by the LTS Team. 
+  * CVE-2016-6352
+    fix for denial of service (out-of-bounds write and crash) via
+    crafted dimensions in an ICO file
+  * CVE-2017-2870
+    Fix for an exploitable integer overflow vulnerability in the
+    tiff_image_parse functionality. When software is compiled with
+    clang, A specially crafted tiff file can cause a heap-overflow
+    resulting in remote code execution. Debian package is compiled
+    with gcc and is not affected, but probably some downstream is.
+  * CVE-2017-6312
+    Fix for an integer overflow in io-ico.c that allows attackers
+    to cause a denial of service (segmentation fault and application
+    crash) via a crafted image
+  * CVE-2017-6313
+    Fix for an integer underflow in the load_resources function in
+    io-icns.c that allows attackers to cause a denial of service
+    (out-of-bounds read and program crash) via a crafted image entry 
+    size in an ICO file
+  * CVE-2017-6314
+    Fix for an infinite loop in the make_available_at_least function
+    in io-tiff.c that allows attackers to cause a denial of service
+    via a large TIFF file. 
+
+ -- Thorsten Alteholz <debian@alteholz.de>  Mon, 16 Dec 2019 17:03:02 +0100
+
 gdk-pixbuf (2.31.1-2+deb8u7) jessie-security; urgency=medium
 
   * CVE-2017-1000422
