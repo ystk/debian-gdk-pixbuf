@@ -1,3 +1,10 @@
+gdk-pixbuf (2.31.1-2+deb8u10) jessie-security; urgency=medium
+
+  * Non-maintainer upload by the ELTS Team.
+  * CVE-2022-48622: ANI file loader memory corruption
+
+ -- Adrian Bunk <bunk@debian.org>  Mon, 12 Aug 2024 20:32:06 +0300
+
 gdk-pixbuf (2.31.1-2+deb8u9) jessie-security; urgency=medium
 
   * Non-maintainer upload by the LTS Team. 
